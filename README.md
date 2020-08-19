@@ -2,7 +2,6 @@
 Generates nonsense
 
 Feed the program data to generate a string of words that don't feel random but don't make sense either
-2 different algorithms are used in nonsense1 and nonsense2
 
 how to use:
 >>>nonsense1 --data="txt file with data" --store="clipboard to use clipboard, filename to store in a file" --length=number of words in nonsense [--seed="any word that is in data"]
