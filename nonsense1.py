@@ -8,9 +8,10 @@ p.add_argument('--length',type=int,required=True,help='number of words in nonsen
 p.add_argument('--store',type=str,required=True,help='where to put the nonsense')
 p.add_argument('--data',type=str,required=True,help='data to create nonsense')
 p.add_argument('--seed',type=str,help='seed for algorithm, a word in data')
+p.add_argument('--delim',type=str,help='delimiter used in data')
 args=p.parse_args()
 #refine data
-with open(args.data,'r') as raw:words=raw.read().split(' ')
+with open(args.data,'r') as raw:words=raw.read().split(' ' if args.delim==None else args.delim)
 follow={}
 already=set()
 word1=words.pop(0)
