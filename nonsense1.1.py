@@ -31,5 +31,7 @@ for _ in range(args.length-1):
 	word1=word2
 if args.store=='clipboard':
 	copy(nonsense)
+elif args.store=="console":
+	print(nonsense)
 else:
 	with open(args.store,'w') as final:final.write(nonsense)
