@@ -1,5 +1,5 @@
 #include<stdlib.h>
-#include<stdio.h>//remove later
+#include<stdio.h>
 #include<string.h>
 #include<time.h>
 typedef struct node {//markov chain and binary tree
